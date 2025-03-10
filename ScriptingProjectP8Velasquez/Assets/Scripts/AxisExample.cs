@@ -5,7 +5,7 @@ using UnityEngine;
 public class AxisGet : MonoBehaviour
 {
     public float range;
-    public Text textOutput;
+   
    
     // Update is called once per frame
     void Update()
@@ -14,6 +14,6 @@ public class AxisGet : MonoBehaviour
         float xPos = h * range;
 
         transform.position = new Vector3(xPos, 2f, 0);
-        textOutput.text = "Value Returned;" + h.ToString("F2");
+       Debug.Log ("Value Returned;" + h.ToString("F2"));
     }
 }
